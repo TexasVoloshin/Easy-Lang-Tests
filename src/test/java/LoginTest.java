@@ -2,8 +2,8 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends MainTest {
 
-    private String login = "pk@pk.pl";
-    private String password = "Pk123456";
+    private String login = "contact@gmail.com";
+    private String password = "Mentor001";
 
     @Test
     public void shouldNotLogin() {
@@ -13,6 +13,7 @@ public class LoginTest extends MainTest {
                 .setPassword(password)
                 .clickLoginButton()
                 .loginAssertion.isUserNotLoggedIn();
+
 
                 //.isUserNotLoggedIn();
     }

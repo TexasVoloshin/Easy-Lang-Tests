@@ -1,0 +1,37 @@
+<component name="libraryTable">
+  <library name="Maven: com.beust:jcommander:1.48">
+    <ANNOTATIONS>
+      <root url="file://$PROJECT_DIR$/.." />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/beust/jcommander/1.48/jcommander-1.48.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../client-combined-3.141.59.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../testng-6.14.3.jar!/" />
+      <root url="file://$PROJECT_DIR$/.." />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/beust/jcommander/1.48/jcommander-1.48-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/beust/jcommander/1.48/jcommander-1.48-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../client-combined-3.141.59-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/.." />
+      <root url="file://$PROJECT_DIR$/../Actions/src" />
+      <root url="file://$PROJECT_DIR$/../AngielskiwitLogin/src" />
+      <root url="file://$PROJECT_DIR$/../Bykowski_Demo/.mvn/wrapper" />
+      <root url="file://$PROJECT_DIR$/../Bykowski_Demo/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../Bykowski_Demo/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../EasyEng2020/src" />
+      <root url="file://$PROJECT_DIR$/../Hello2/src" />
+      <root url="file://$PROJECT_DIR$/../InstaBot/src" />
+      <root url="file://$PROJECT_DIR$/../RandomWiki/src" />
+      <root url="file://$PROJECT_DIR$/src/main/java" />
+      <root url="file://$PROJECT_DIR$/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../interTasks/src" />
+      <root url="file://$PROJECT_DIR$/../portalAngielskiLogin/src" />
+      <root url="file://$PROJECT_DIR$/../src" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/.." recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/.." recursive="false" type="SOURCES" />
+  </library>
+</component>

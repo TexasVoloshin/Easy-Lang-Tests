@@ -9,7 +9,7 @@ import pages.MainPage;
 
 public class LoginAssertion extends MainPage {
 
-    @FindBy(css = "#account > div.text-danger.validation-summary-errors > ul > li")
+    @FindBy(xpath = "//span[@class='is- help is-danger is-size-5']")
     private WebElement wrongCredentials;
 
 

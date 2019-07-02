@@ -6,10 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class IndexPage extends MainPage {
-
-    @FindBy(css = "[href=\"/identity/account/login\"]")
+    @FindBy(css = "a[href='./login']")
     private WebElement goToLoginPage;
-
 
     public IndexPage(WebDriver driver, String url) {
         super(driver);
@@ -28,6 +26,7 @@ public class IndexPage extends MainPage {
     }
 
     public LoginPage openLoginPage() {
+        driver.get(url+"/login");
         goToLoginPage.click();
         return new LoginPage(driver);
     }

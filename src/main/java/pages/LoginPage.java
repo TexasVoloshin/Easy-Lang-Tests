@@ -4,19 +4,20 @@ import assertion.LoginAssertion;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends MainPage {
     public LoginAssertion loginAssertion;
 
 
-    @FindBy(css = "#Input_Email")
+    @FindBy(xpath = "//input[@type= 'email']")
     private WebElement userNameInput;
 
-    @FindBy(css = "#Input_Password")
+    @FindBy(xpath =  "//input[@type= 'password']")
     private WebElement userPasswordInput;
 
-    @FindBy(css = ".btn")
+    @FindBy(how= How.XPATH, using="//button[text()='Zaloguj się']")
     private  WebElement loginButton;
 
     public LoginPage(WebDriver driver){
