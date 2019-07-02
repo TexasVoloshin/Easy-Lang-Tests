@@ -1,0 +1,8 @@
+<suite name="RunTest">
+    <parameter name="url" value="https://angielskiwit.pl/"/>
+    <test name="LoginTest">
+        <classes>
+            <class name="LoginTest"/>
+        </classes>
+    </test>
+</suite>
