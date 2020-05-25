@@ -8,9 +8,14 @@ import org.testng.Assert;
 import pages.MainPage;
 
 public class LoginAssertion extends MainPage {
-
+    // with  incorrect credentails
     @FindBy(xpath = "//span[@class='is- help is-danger is-size-5']")
     private WebElement wrongCredentials;
+  // with correct credentails
+
+  @FindBy(xpath="//a[@class='button green-btn' and contains(text(), 'Wyloguj')]")
+  //@FindBy(css = "a:contains('Wyloguj')")
+    private WebElement correctCredentials;
 
 
     public LoginAssertion(WebDriver driver) {
@@ -22,4 +27,10 @@ public class LoginAssertion extends MainPage {
         Assert.assertTrue(wrongCredentials.isDisplayed());
 
     }
+
+    public void isUserLoggedIn() {
+        Assert.assertTrue(correctCredentials.isDisplayed());
+
+    }
+
 }

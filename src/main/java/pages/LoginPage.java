@@ -38,6 +38,11 @@ public class LoginPage extends MainPage {
 
     public LoginPage clickLoginButton() {
         loginButton.click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return new LoginPage(driver);
     }
 }
