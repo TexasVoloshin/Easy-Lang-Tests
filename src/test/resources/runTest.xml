@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="RunTest">
+
+    <parameter name="correctusername" value="erasmus.mentor.contact@gmail.com"/>
+    <parameter name="correctpassword" value="Mentor00"/>
     <parameter name="url" value="https://easy-lang.pl/login"/>
     <test name="LoginTest">
         <classes>

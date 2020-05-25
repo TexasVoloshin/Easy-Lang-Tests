@@ -11,4 +11,5 @@ public class AccountPage extends LoginPage {
         PageFactory.initElements(driver, this);
         //loginAssertion = new LoginAssertion(driver);
     }
+
 }

@@ -1,3 +1,4 @@
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class LoginTest extends MainTest {
@@ -5,9 +6,6 @@ public class LoginTest extends MainTest {
     private String login = "contact@gmail.com";
     private String password = "Mentor001";
 
-
-    private String login1 = "erasmus.mentor.contact@gmail.com";
-    private String password1 = "Mentor00";
 
     @Test
     public void shouldNotLogin() {
@@ -18,18 +16,20 @@ public class LoginTest extends MainTest {
                 .clickLoginButton()
                 .loginAssertion.isUserNotLoggedIn();
 
-
-                //.isUserNotLoggedIn();
     }
 
+ /*   public void initFramework(@Optional("src/test/resources/config.properties/") String configfile) {
+        //method implementation here
+    }*/
+    @Parameters( {"correctusername","correctpassword"} )
     @Test
-    public void shouldLogin() {
+    public void shouldLogin(String login1, String password1) {
+
         indexPage.openIndexPage()
                 .openLoginPage()
                 .setLogin(login1)
                 .setPassword(password1)
                 .clickLoginButton()
-
                 .loginAssertion.isUserLoggedIn();
 
 
