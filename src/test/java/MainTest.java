@@ -1,3 +1,4 @@
+import config.ReadFileData;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
@@ -8,13 +9,18 @@ import pages.IndexPage;
 import pages.LoginPage;
 
 public class MainTest {
+    public static String[] credentials;
     WebDriver driver;
     IndexPage indexPage;
     LoginPage loginPage;
     AccountPage accountPage;
     private String url;
+    ReadFileData ReaderFileData = new ReadFileData();
+
+
 
     public MainTest() {
+        this.credentials = ReaderFileData.ReadValidCredentials();
     }
 
     //String username;
@@ -32,10 +38,7 @@ public class MainTest {
         loginPage = new LoginPage(driver);
         accountPage = new AccountPage(driver);
 
-//
-//        Random rg = new Random();
-//        int randomInt = rg.nextInt(1000);
-//        username = "username" + randomInt;
+
     }
 
     @AfterTest
