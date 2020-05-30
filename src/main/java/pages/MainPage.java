@@ -15,6 +15,7 @@ public MainPage(WebDriver driver) {
 
     public boolean waitForJStoLoad() {
 
+
         WebDriverWait wait = new WebDriverWait(driver, 30);
         try {
             Thread.sleep(100);

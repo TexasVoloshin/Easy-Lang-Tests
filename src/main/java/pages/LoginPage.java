@@ -4,7 +4,6 @@ import assertion.LoginAssertion;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends MainPage {
@@ -17,7 +16,8 @@ public class LoginPage extends MainPage {
     @FindBy(xpath =  "//input[@type= 'password']")
     private WebElement userPasswordInput;
 
-    @FindBy(how= How.XPATH, using="//button[text()='Zaloguj się']")
+
+   @FindBy(xpath = "(//button[@class='button is-primary is-large'])")
     private  WebElement loginButton;
 
     public LoginPage(WebDriver driver){
@@ -39,10 +39,12 @@ public class LoginPage extends MainPage {
     public LoginPage clickLoginButton() {
         loginButton.click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        waitForJStoLoad();
+        System.out.println("Login button clicked");
         return new LoginPage(driver);
     }
 }

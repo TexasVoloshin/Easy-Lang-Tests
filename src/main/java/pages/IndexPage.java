@@ -8,15 +8,15 @@ import org.openqa.selenium.support.PageFactory;
 public class IndexPage extends MainPage {
     @FindBy(css = "a[href='./login']")
     private WebElement goToLoginPage;
+    @FindBy(css = "a[href='./contact']")
+    private WebElement goToContactPage;
+    @FindBy(css = "*[class*='navbar-item goto-repeat']")
+    private WebElement goToProfilePage;
 
     public IndexPage(WebDriver driver, String url) {
         super(driver);
         PageFactory.initElements(driver, this);
         this.url = url;
-    }
-
-    public IndexPage(WebDriver driver) {
-        super(driver);
     }
 
     public IndexPage openIndexPage() {
@@ -27,7 +27,23 @@ public class IndexPage extends MainPage {
 
     public LoginPage openLoginPage() {
         driver.get(url+"/login");
+        waitForJStoLoad();
         goToLoginPage.click();
+
         return new LoginPage(driver);
+    }
+
+    public ContactPage openContactPage() {
+        waitForJStoLoad();
+        driver.get(url+"/contact");
+
+        return new ContactPage(driver);
+    }
+
+    public  ProfilePage openProfilePage() {
+        waitForJStoLoad();
+        driver.get(url+"/profile");
+        goToProfilePage.click();
+        return new ProfilePage(driver);
     }
 }

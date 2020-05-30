@@ -1,43 +1,54 @@
 import config.ReadFileData;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
-import pages.AccountPage;
-import pages.IndexPage;
-import pages.LoginPage;
+import pages.*;
 
 public class MainTest {
     public static String[] credentials;
-    WebDriver driver;
+    public WebDriver driver;
     IndexPage indexPage;
     LoginPage loginPage;
+    ContactPage contactPage;
     AccountPage accountPage;
+    ProfilePage profilePage;
     private String url;
     ReadFileData ReaderFileData = new ReadFileData();
-
-
 
     public MainTest() {
         this.credentials = ReaderFileData.ReadValidCredentials();
     }
-
-    //String username;
-
+    @Parameters({"browser","url"})
     @BeforeTest
-    @Parameters({"url"})
-    public void before(String url) {
+        // Passing Browser parameter from TestNG xml
+    public void beforeTest(String browser, String url)throws Exception{
+            // If the browser is Firefox, then do this
 
-        System.setProperty("webdriver.gecko.driver","D:/Selenium/geckodriver.exe") ;
-//        ChromeOptions options = new ChromeOptions();
-//        options.setExperimentalOption("useAutomationExtension", false);
+
+        if(browser.equalsIgnoreCase("firefox")) {
+                System.setProperty("webdriver.gecko.driver","D:/Selenium/geckodriver.exe");
+                driver = new FirefoxDriver();
+
+                // If browser is IE, then do this
+
+            }else if (browser.equalsIgnoreCase("ie")) {
+
+                // Here I am setting up the path for my IEDriver
+                System.setProperty("webdriver.ie.driver", "D:/Selenium/IEDriverServer.exe");
+                driver = new InternetExplorerDriver();
+            }else{
+                //If no browser passed throw exception
+                throw new Exception("Browser is not correct");
+            }
+
         this.url = url;
-        driver = new FirefoxDriver();
+        driver.manage().window().maximize();
         indexPage = new IndexPage(driver, url);
-        loginPage = new LoginPage(driver);
-        accountPage = new AccountPage(driver);
-
+       // loginPage = new LoginPage(driver);
+       // accountPage = new AccountPage(driver);
 
     }
 

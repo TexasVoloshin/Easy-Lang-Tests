@@ -6,8 +6,8 @@ public class LoginTest extends MainTest {
     private String password = "Mentor001";
 
 
-   private String login_1 = MainTest.credentials[0];
-   private String password_1 = MainTest.credentials[1];
+    private String login_1 = MainTest.credentials[0];
+    private String password_1 = MainTest.credentials[1];
 
 
 
@@ -22,10 +22,7 @@ public class LoginTest extends MainTest {
 
     }
 
- /*   public void initFramework(@Optional("src/test/resources/config.properties/") String configfile) {
-        //method implementation here
-    }*/
-   // @Parameters( {"correctusername","correctpassword"} )
+
     @Test
     public void shouldLogin() {
 
@@ -37,7 +34,7 @@ public class LoginTest extends MainTest {
                 .loginAssertion.isUserLoggedIn();
 
 
-        //.isUserNotLoggedIn();
+
     }
 
 }

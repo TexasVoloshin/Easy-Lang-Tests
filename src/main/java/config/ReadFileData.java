@@ -17,7 +17,8 @@ public class ReadFileData {
 
      public ReadFileData(){
         loginV = "login";
-        passwordV = "password";}
+        passwordV = "password";
+     }
 
 
      public String[] ReadValidCredentials() {
