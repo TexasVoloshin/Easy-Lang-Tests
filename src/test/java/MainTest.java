@@ -43,6 +43,7 @@ public class MainTest {
                 System.setProperty("webdriver.ie.driver", "D:/Selenium/IEDriverServer.exe");
                 driver = new InternetExplorerDriver();
             }else{
+
                 //If no browser passed throw exception
                 throw new Exception("Browser is not correct");
             }
