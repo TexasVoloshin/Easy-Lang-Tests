@@ -2,9 +2,7 @@ import config.ReadFileData;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 import pages.*;
 
 public class MainTest {
@@ -18,11 +16,16 @@ public class MainTest {
     private String url;
     ReadFileData ReaderFileData = new ReadFileData();
 
+
     public MainTest() {
         this.credentials = ReaderFileData.ReadValidCredentials();
+
     }
+
+
     @Parameters({"browser","url"})
-    @BeforeTest
+    @BeforeClass
+   // @BeforeGroups(groups = "loggedin")
         // Passing Browser parameter from TestNG xml
     public void beforeTest(String browser, String url)throws Exception{
             // If the browser is Firefox, then do this
@@ -51,7 +54,16 @@ public class MainTest {
        // accountPage = new AccountPage(driver);
 
     }
+  //
+  // @BeforeClass()
+ /*   public void userIsLoggedIn(String validLogin, String validPassword ){
+        validLogin=this.credentials[0];
+        validPassword=this.credentials[1];
 
+        indexPage.openLoginPage().setLogin(validLogin).setPassword(validPassword)
+                .clickLoginButton().loginAssertion.isUserNotLoggedIn();
+
+    }*/
     @AfterTest
     public void after() {
         driver.close();

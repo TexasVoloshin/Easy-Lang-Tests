@@ -11,13 +11,13 @@ public class ProfileTest extends MainTest{
     }
     @Test
     public void shouldShowReplays() {
-        indexPage.openIndexPage()
+      indexPage.openIndexPage()
                 .openLoginPage()
                 .setLogin(login_1)
                 .setPassword(password_1)
                 .clickLoginButton()
                 .loginAssertion.isUserLoggedIn();
-        indexPage.openIndexPage().openProfilePage().replaysIsDisplayed();
+        indexPage.openIndexPage().openProfilePage().replaysIsDisplayedInH1andButton();
 
 
     }}
