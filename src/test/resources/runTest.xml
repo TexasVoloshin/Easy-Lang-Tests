@@ -26,12 +26,12 @@
             <class name="ProfileTest"/>
         </classes>
     </test>
- <test name="BasicLevelTest">
+<!-- <test name="BasicLevelTest">
         <parameter name="browser" value="firefox" />
         <classes>
             <class name="BasicLevelTest"/>
         </classes>
-    </test>
+    </test>-->
 
 
 </suite>
