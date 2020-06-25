@@ -39,6 +39,12 @@ public class IndexPage extends MainPage {
 
         return new ContactPage(driver);
     }
+    public BasicLevelPage openBasicLevelPage() {
+        waitForJStoLoad();
+        driver.get(url+"/podstawy/podstawy");
+
+        return new BasicLevelPage(driver);
+    }
 
     public  ProfilePage openProfilePage() {
         waitForJStoLoad();
