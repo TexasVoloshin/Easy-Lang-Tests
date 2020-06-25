@@ -11,10 +11,9 @@ public class LoginAssertion extends MainPage {
     // with  incorrect credentails
     @FindBy(xpath = "//span[@class='is- help is-danger is-size-5']")
     private WebElement wrongCredentials;
-  // with correct credentails
 
+  // with correct credentails
   @FindBy(xpath="//a[@class='button green-btn' and contains(text(), 'Wyloguj')]")
-  //@FindBy(css = "a:contains('Wyloguj')")
     private WebElement correctCredentials;
 
 

@@ -22,41 +22,40 @@ public class MainTest {
 
     }
 
-
-    @Parameters({"browser","url"})
+    @Parameters({"browser", "url"})
     @BeforeClass
-   // @BeforeGroups(groups = "loggedin")
-        // Passing Browser parameter from TestNG xml
-    public void beforeTest(String browser, String url)throws Exception{
-            // If the browser is Firefox, then do this
+    // @BeforeGroups(groups = "loggedin")
+    // Passing Browser parameter from TestNG xml
+    public void beforeTest(String browser, String url) throws Exception {
 
+        // If the browser is Firefox, then do this
+        if (browser.equalsIgnoreCase("firefox")) {
+            System.setProperty("webdriver.gecko.driver", "D:/Selenium/geckodriver.exe");
+            driver = new FirefoxDriver();
 
-        if(browser.equalsIgnoreCase("firefox")) {
-                System.setProperty("webdriver.gecko.driver","D:/Selenium/geckodriver.exe");
-                driver = new FirefoxDriver();
+            // If browser is IE, then do this
 
-                // If browser is IE, then do this
+        } else if (browser.equalsIgnoreCase("ie")) {
 
-            }else if (browser.equalsIgnoreCase("ie")) {
+            // Here I am setting up the path for my IEDriver
+            System.setProperty("webdriver.ie.driver", "D:/Selenium/IEDriverServer.exe");
+            driver = new InternetExplorerDriver();
+        } else {
 
-                // Here I am setting up the path for my IEDriver
-                System.setProperty("webdriver.ie.driver", "D:/Selenium/IEDriverServer.exe");
-                driver = new InternetExplorerDriver();
-            }else{
-
-                //If no browser passed throw exception
-                throw new Exception("Browser is not correct");
-            }
+            //If no browser passed throw exception
+            throw new Exception("Browser is not correct");
+        }
 
         this.url = url;
         driver.manage().window().maximize();
         indexPage = new IndexPage(driver, url);
-       // loginPage = new LoginPage(driver);
-       // accountPage = new AccountPage(driver);
+        // loginPage = new LoginPage(driver);
+        // accountPage = new AccountPage(driver);
 
     }
-  //
-  // @BeforeClass()
+
+    //
+    // @BeforeClass()
  /*   public void userIsLoggedIn(String validLogin, String validPassword ){
         validLogin=this.credentials[0];
         validPassword=this.credentials[1];

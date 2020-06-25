@@ -15,14 +15,14 @@ public class ReadFileData {
     String[] credential;
     UsernamePasswordCredentials credentials;
 
-     public ReadFileData(){
+    public ReadFileData() {
         loginV = "login";
         passwordV = "password";
-     }
+    }
 
 
-     public String[] ReadValidCredentials() {
-        String[]credential=new String[2];
+    public String[] ReadValidCredentials() {
+        String[] credential = new String[2];
         File file = new File("D:/Selenium/angielski/src/test/resources/config.properties");
 
         FileInputStream fileInput = null;
@@ -39,8 +39,8 @@ public class ReadFileData {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        credential[0]=prop.getProperty("correctusername");
-        credential[1]=prop.getProperty("correctpassword");
+        credential[0] = prop.getProperty("correctusername");
+        credential[1] = prop.getProperty("correctpassword");
 
         return credential;
     }

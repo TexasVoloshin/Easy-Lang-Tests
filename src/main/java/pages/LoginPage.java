@@ -9,18 +9,17 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage extends MainPage {
     public LoginAssertion loginAssertion;
 
-
     @FindBy(xpath = "//input[@type= 'email']")
     private WebElement userNameInput;
 
-    @FindBy(xpath =  "//input[@type= 'password']")
+    @FindBy(xpath = "//input[@type= 'password']")
     private WebElement userPasswordInput;
 
 
-   @FindBy(xpath = "(//button[@class='button is-primary is-large'])")
-    private  WebElement loginButton;
+    @FindBy(xpath = "(//button[@class='button is-primary is-large'])")
+    private WebElement loginButton;
 
-    public LoginPage(WebDriver driver){
+    public LoginPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
         loginAssertion = new LoginAssertion(driver);

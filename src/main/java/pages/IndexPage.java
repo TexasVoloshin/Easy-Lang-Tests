@@ -26,7 +26,7 @@ public class IndexPage extends MainPage {
     }
 
     public LoginPage openLoginPage() {
-        driver.get(url+"/login");
+        driver.get(url + "/login");
         waitForJStoLoad();
         goToLoginPage.click();
 
@@ -35,7 +35,7 @@ public class IndexPage extends MainPage {
 
     public ContactPage openContactPage() {
         waitForJStoLoad();
-        driver.get(url+"/contact");
+        driver.get(url + "/contact");
 
         return new ContactPage(driver);
     }
@@ -46,9 +46,9 @@ public class IndexPage extends MainPage {
         return new BasicLevelPage(driver);
     }*/
 
-    public  ProfilePage openProfilePage() {
+    public ProfilePage openProfilePage() {
         waitForJStoLoad();
-        driver.get(url+"/profile");
+        driver.get(url + "/profile");
         goToProfilePage.click();
         return new ProfilePage(driver);
     }

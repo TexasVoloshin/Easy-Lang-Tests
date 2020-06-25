@@ -8,14 +8,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public abstract class MainPage {
     protected WebDriver driver;
     protected String url;
-
-public MainPage(WebDriver driver) {
-    this.driver = driver;
-}
-
+    public MainPage(WebDriver driver) {
+        this.driver = driver;
+    }
     public boolean waitForJStoLoad() {
-
-
         WebDriverWait wait = new WebDriverWait(driver, 30);
         try {
             Thread.sleep(100);
@@ -47,5 +43,5 @@ public MainPage(WebDriver driver) {
         return wait.until(jQueryLoad) && wait.until(jsLoad);
     }
 
-    
+
 }

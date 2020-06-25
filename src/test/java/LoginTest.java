@@ -4,12 +4,8 @@ public class LoginTest extends MainTest {
 
     private String login = "contact@gmail.com";
     private String password = "Mentor001";
-
-
     private String login_1 = MainTest.credentials[0];
     private String password_1 = MainTest.credentials[1];
-
-
 
     @Test
     public void shouldNotLogin() {
@@ -19,9 +15,7 @@ public class LoginTest extends MainTest {
                 .setPassword(password)
                 .clickLoginButton()
                 .loginAssertion.isUserNotLoggedIn();
-
     }
-
 
     @Test
     public void shouldLogin() {
@@ -32,9 +26,6 @@ public class LoginTest extends MainTest {
                 .setPassword(password_1)
                 .clickLoginButton()
                 .loginAssertion.isUserLoggedIn();
-
-
-
     }
 
 }
