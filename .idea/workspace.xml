@@ -19,56 +19,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aba8281-43f7-41b2-9afd-2d5663472f60" name="Default Changelist" comment=" profile ages tests and contact test added">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/config/ReadFileData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pages/ContactPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pages/ProfilePage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/Command line suite/Command line test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/Command line suite/Command line test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/Command line suite/testng-failed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/failed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-LoginTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/Command line test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/groups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods-alphabetical.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods-not-run.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/reporter-output.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/testng.xml.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/toc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/passed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/skipped.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/ContactTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/LoginTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/angielski.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/MainTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/ProfileTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/runTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng-1.0.dtd" afterDir="false" />
+    <list default="true" id="2aba8281-43f7-41b2-9afd-2d5663472f60" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assertion/LoginAssertion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/ReadFileData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/AccountPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/ContactPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/IndexPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/MainPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/MainPage$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/MainPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/ProfilePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ContactTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/angielski.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ProfileTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runTest.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +71,7 @@
     <property name="SearchEverywhereHistoryKey" value="href&#9;PSI&#9;JAVA://org.apache.http.HttpRequestFactory&#10;css selector&#9;PSI&#9;JAVA://org.openqa.selenium.By.ByCssSelector&#10;chrome&#9;PSI&#9;JAVA://org.openqa.selenium.chrome.ChromeDriver&#10;pom.xml&#9;FILE&#9;file://D:/Selenium/angielski/pom.xml" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574323487995" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../testng-6.14.3.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
@@ -231,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590837716957</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="readfileniedziala">
+      <created>1593110307098</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593110307098</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -247,6 +226,11 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -262,9 +246,14 @@
     <MESSAGE value="angielskiwit - added login properties file" />
     <MESSAGE value="angielskiwit - read valid credentials form the file" />
     <MESSAGE value="angielskiwit - profile ages tests and contact test added" />
-    <option name="LAST_COMMIT_MESSAGE" value="angielskiwit - profile ages tests and contact test added" />
+    <MESSAGE value="readfileniedziala" />
+    <option name="LAST_COMMIT_MESSAGE" value="readfileniedziala" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1593110956145">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1593110956145" />
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590416760474">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -313,11 +302,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="472" y="43" key="RollbackChangesDialog/0.0.1280.680/1920.0.1680.1010@0.0.1280.680" timestamp="1590501928035" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1590837988637">
+    <state x="121" y="0" key="SettingsEditor" timestamp="1593110597723">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1680.1010@0.0.1280.680" timestamp="1590417296344" />
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1590837988636" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1593110597723" />
     <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1590837747617">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -335,9 +324,5 @@
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1680.1010@0.0.1280.680" timestamp="1590416934576" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1590837437976" />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
   </component>
 </project>

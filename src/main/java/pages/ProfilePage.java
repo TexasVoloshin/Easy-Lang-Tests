@@ -9,7 +9,7 @@ import org.testng.Assert;
 public class ProfilePage extends MainPage {
 
 
-  @FindBy(xpath = "//h1[contains(text(), 'A Powtórki: 0 ')]")
+  @FindBy(xpath = "//h1[contains(text(), 'Powtórki: 0 ')]")
    private WebElement replays;
 
    @FindBy(xpath = "//p[contains(@class,'notifier__notification-message') and contains(text(),'Tylko dla zalogowanych!')]")

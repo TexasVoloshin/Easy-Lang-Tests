@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="RunTest">
     <parameter name="url" value="https://easy-lang.pl"/>
-  <!--  <test name="LoginTest">
+   <test name="LoginTest">
         <parameter name="browser" value="firefox" />
         <classes>
             <class name="LoginTest"/>
@@ -13,7 +13,7 @@
         <classes>
             <class name="ContactTest"/>
         </classes>
-    </test>-->
+    </test>
     <test name="ProfileTest">
         <parameter name="browser" value="firefox" />
         <classes>
