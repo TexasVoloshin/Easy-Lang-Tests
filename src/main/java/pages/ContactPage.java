@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 
-public class ContactPage extends MainPage {
+public class ContactPage extends BasePage {
 
     @FindBy(xpath = "//input[@id='recaptcha-token']")
     private WebElement captchaCheckBox;

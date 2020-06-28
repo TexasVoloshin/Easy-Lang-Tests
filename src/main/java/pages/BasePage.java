@@ -5,10 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public abstract class MainPage {
+public abstract class BasePage {
     protected WebDriver driver;
     protected String url;
-    public MainPage(WebDriver driver) {
+    public BasePage(WebDriver driver) {
         this.driver = driver;
     }
     public boolean waitForJStoLoad() {

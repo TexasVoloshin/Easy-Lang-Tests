@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class IndexPage extends MainPage {
+public class IndexPage extends BasePage {
     @FindBy(css = "a[href='./login']")
     private WebElement goToLoginPage;
     @FindBy(css = "a[href='./contact']")

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class ProfilePage extends MainPage {
+public class ProfilePage extends BasePage {
 
 
     @FindBy(xpath = "//h1")

@@ -1,11 +1,11 @@
 import org.testng.annotations.Test;
 
-public class LoginTest extends MainTest {
+public class LoginTest extends BaseTest {
 
     private String login = "contact@gmail.com";
     private String password = "Mentor001";
-    private String login_1 = MainTest.credentials[0];
-    private String password_1 = MainTest.credentials[1];
+    private String login_1 = BaseTest.credentials[0];
+    private String password_1 = BaseTest.credentials[1];
 
     @Test
     public void shouldNotLogin() {

@@ -1,8 +1,8 @@
 import org.testng.annotations.Test;
 
-public class ProfileTest extends MainTest {
-    private String login_1 = MainTest.credentials[0];
-    private String password_1 = MainTest.credentials[1];
+public class ProfileTest extends BaseTest {
+    private String login_1 = BaseTest.credentials[0];
+    private String password_1 = BaseTest.credentials[1];
 
     @Test
     public void shouldNotShowProfilePageAndDisplayNotification() {

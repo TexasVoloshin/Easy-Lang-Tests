@@ -1,6 +1,6 @@
 import org.testng.annotations.Test;
 
-public class ContactTest extends MainTest {
+public class ContactTest extends BaseTest {
 
     @Test
     public void shouldShowContacts() {

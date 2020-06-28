@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import pages.MainPage;
+import pages.BasePage;
 
-public class LoginAssertion extends MainPage {
+public class LoginAssertion extends BasePage {
     // with  incorrect credentails
     @FindBy(xpath = "//span[@class='is- help is-danger is-size-5']")
     private WebElement wrongCredentials;

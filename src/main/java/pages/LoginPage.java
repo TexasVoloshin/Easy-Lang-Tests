@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage extends MainPage {
+public class LoginPage extends BasePage {
     public LoginAssertion loginAssertion;
 
     @FindBy(xpath = "//input[@type= 'email']")
