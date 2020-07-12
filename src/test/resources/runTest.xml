@@ -2,36 +2,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="RunTest">
     <parameter name="url" value="https://easy-lang.pl"/>
-<test name="LoginTest">
-        <parameter name="browser" value="firefox" />
+    <test name="LoginTest">
+        <parameter name="browser" value="firefox"/>
         <classes>
             <class name="LoginTest"/>
         </classes>
     </test>
     <test name="ContactTest">
-        <parameter name="browser" value="ie" />
+        <parameter name="browser" value="ie"/>
         <classes>
             <class name="ContactTest"/>
         </classes>
     </test>
 
     <test name="ProfileTest">
-        <parameter name="browser" value="firefox" />
-      <!--  <groups>
-            <run>
-                <include name = "loggedin" />
-            </run>
-        </groups>-->
+        <parameter name="browser" value="firefox"/>
         <classes>
             <class name="ProfileTest"/>
         </classes>
     </test>
-<!-- <test name="BasicLevelTest">
-        <parameter name="browser" value="firefox" />
-        <classes>
-            <class name="BasicLevelTest"/>
-        </classes>
-    </test>-->
-
-
 </suite>

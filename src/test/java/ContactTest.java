@@ -5,8 +5,6 @@ public class ContactTest extends BaseTest {
     @Test
     public void shouldShowContacts() {
         indexPage.openIndexPage()
-                .openContactPage().contactemailIsDisplayed();
-
+                 .openContactPage().contactEmailIsDisplayed();
     }
-
 }

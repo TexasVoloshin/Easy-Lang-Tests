@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class IndexPage extends BasePage {
+
     @FindBy(css = "a[href='./login']")
     private WebElement goToLoginPage;
     @FindBy(css = "a[href='./contact']")
@@ -21,33 +22,26 @@ public class IndexPage extends BasePage {
 
     public IndexPage openIndexPage() {
         driver.get(url);
-        waitForJStoLoad();
+        waitForJSToLoad();
         return this;
     }
 
     public LoginPage openLoginPage() {
         driver.get(url + "/login");
-        waitForJStoLoad();
+        waitForJSToLoad();
         goToLoginPage.click();
 
         return new LoginPage(driver);
     }
 
     public ContactPage openContactPage() {
-        waitForJStoLoad();
+        waitForJSToLoad();
         driver.get(url + "/contact");
-
         return new ContactPage(driver);
     }
- /*   public BasicLevelPage openBasicLevelPage() {
-        waitForJStoLoad();
-        driver.get(url+"/podstawy/podstawy");
-
-        return new BasicLevelPage(driver);
-    }*/
 
     public ProfilePage openProfilePage() {
-        waitForJStoLoad();
+        waitForJSToLoad();
         driver.get(url + "/profile");
         goToProfilePage.click();
         return new ProfilePage(driver);
