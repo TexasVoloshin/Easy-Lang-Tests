@@ -7,16 +7,15 @@ public class ProfileTest extends BaseTest {
     @Test
     public void shouldNotShowProfilePageAndDisplayNotification() {
         indexPage.openIndexPage().openProfilePage().notificationIsDisplayed();
-
     }
 
     @Test
     public void shouldShowReplays() {
         indexPage.openIndexPage()
-                .openLoginPage()
-                .setLogin(login_1)
-                .setPassword(password_1)
-                .clickLoginButton()
+                 .openLoginPage()
+                 .setLogin(login_1)
+                 .setPassword(password_1)
+                 .clickLoginButton()
                 .loginAssertion.isUserLoggedIn();
         indexPage.openIndexPage().openProfilePage().replaysIsDisplayedInH1andButton();
     }

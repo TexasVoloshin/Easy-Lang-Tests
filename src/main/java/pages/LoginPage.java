@@ -7,15 +7,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BasePage {
+
     public LoginAssertion loginAssertion;
 
     @FindBy(xpath = "//input[@type= 'email']")
     private WebElement userNameInput;
-
     @FindBy(xpath = "//input[@type= 'password']")
     private WebElement userPasswordInput;
-
-
     @FindBy(xpath = "(//button[@class='button is-primary is-large'])")
     private WebElement loginButton;
 
@@ -39,11 +37,11 @@ public class LoginPage extends BasePage {
         loginButton.click();
         try {
             Thread.sleep(2000);
-        } catch (InterruptedException e) {
+        }
+        catch (InterruptedException e) {
             e.printStackTrace();
         }
-        waitForJStoLoad();
-        System.out.println("Login button clicked");
+        waitForJSToLoad();
         return new LoginPage(driver);
     }
 }
