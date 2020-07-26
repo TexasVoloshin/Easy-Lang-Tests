@@ -1,6 +1,5 @@
 config.properties
 .idea
 target
-java
 *.iml
 *.dtd
