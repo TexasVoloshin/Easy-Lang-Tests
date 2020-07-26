@@ -14,6 +14,7 @@ public class LoginAssertion extends BasePage {
     @FindBy(xpath = "//a[@class='button green-btn' and contains(text(), 'Wyloguj')]")
     private WebElement correctCredentials;
 
+
     public LoginAssertion(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
